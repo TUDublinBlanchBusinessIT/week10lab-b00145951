@@ -2,6 +2,7 @@
 session_start();
 if (!isset($_POST['confirm'])) {
     header("Location: flightBooking.html");
+    exit;
 }
 $fn = $_SESSION['passengerFN'];
 $sn = $_SESSION['passengerSN'];

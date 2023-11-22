@@ -2,8 +2,8 @@
 session_start();
 
 // Gather data from the $_POST
-$subTenKG = isset($_POST['subTenKG']) ? $_POST['subTenKG'] : 0;
-$overTenKG = isset($_POST['overTenKG']) ? $_POST['overTenKG'] : 0;
+$subTenKG = isset($_POST['subTenKG']) ? intval($_POST['subTenKG']) : 0;
+$overTenKG = isset($_POST['overTenKG']) ? intval($_POST['overTenKG']) : 0;
 
 // Storing data in session variables for bag weight 
 $_SESSION['subTenKG'] = $subTenKG;
